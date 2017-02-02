@@ -348,8 +348,8 @@ class SE3Base {
   // of SE(3), see below.
   //
   SOPHUS_FUNC static SE3<Scalar> exp(const Tangent& a) {
-    using std::cos;
-    using std::sin;
+    using ceres::cos;
+    using ceres::sin;
     const Eigen::Matrix<Scalar, 3, 1> omega = a.template tail<3>();
 
     Scalar theta;
@@ -490,7 +490,7 @@ class SE3Base {
   // of SE(3).
   //
   SOPHUS_FUNC static Tangent log(const SE3<Scalar>& se3) {
-    using std::abs;
+    using ceres::abs;
     Tangent upsilon_omega;
     Scalar theta;
     upsilon_omega.template tail<3>() =

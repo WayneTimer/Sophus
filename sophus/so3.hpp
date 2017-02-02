@@ -65,10 +65,10 @@ struct traits<Map<const Sophus::SO3<_Scalar>, _Options>>
 }  // namespace Eigen
 
 namespace Sophus {
-using std::sqrt;
-using std::abs;
-using std::cos;
-using std::sin;
+using ceres::sqrt;
+using ceres::abs;
+using ceres::cos;
+using ceres::sin;
 
 // SO3 base type - implements SO3 class but is storage agnostic.
 //

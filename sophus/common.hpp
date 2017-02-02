@@ -8,6 +8,8 @@
 
 #include <Eigen/Core>
 
+#include <ceres/ceres.h>
+
 // following boost's assert.hpp
 #undef SOPHUS_ENSURE
 
